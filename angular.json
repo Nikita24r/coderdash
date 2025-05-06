@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/codersdash",
+            "outputPath": "dist",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -37,9 +37,18 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/dist/css/style.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/assets/libs/jquery/dist/jquery.min.js",
+              "src/assets/assets/libs/popper.js/dist/umd/popper.min.js",
+              "src/assets/assets/libs/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/assets/extra-libs/sparkline/sparkline.js",
+              "src/assets/dist/js/waves.js",
+              "src/assets/dist/js/sidebarmenu.js",
+              "src/assets/dist/js/custom.min.js"
+            ]
           },
           "configurations": {
             "production": {
